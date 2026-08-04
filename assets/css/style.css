@@ -66,6 +66,61 @@ footer {
 }
 
 /* ========== HEADER ========== */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #17abb3; /* rgb(23, 171, 179) */
+    padding: 100px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 300px;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-content li {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header-content li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+header h1,
+header h2,
+header a,
+header span {
+    color: #ffffff; /* rgb(255, 255, 255) */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 /* ========== MAIN ========== */
 /* ========== FOOTER ========== */
 /* ========== SURVOLS ========== */
