@@ -1,0 +1,71 @@
+/* ========== POLICES ========== */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Italic.woff') format('woff'), url('../fonts/Raleway/Raleway-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* ========== RESET ========== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== STYLES GENERAUX ========== */
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #333333; /* rgb(23, 171, 179) */
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+}
+
+h3 {
+    font-weight: 700;
+    color: #333333; /* rgb(23, 171, 179) */
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+/* ========== CONTAINER ========== */
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* ========== HEADER ========== */
+/* ========== MAIN ========== */
+/* ========== FOOTER ========== */
+/* ========== SURVOLS ========== */
