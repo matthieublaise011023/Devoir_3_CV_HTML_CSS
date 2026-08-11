@@ -187,6 +187,7 @@ main h2 {
     padding-bottom: 5px; /* Espacement entre le texte et la ligne */
 }
 
+/* ====== COLONNE DE GAUCHE ====== */
 .skills,
 .languages {
     list-style: none; /* Supprime les puces de la liste */
@@ -267,6 +268,50 @@ main h2 {
     white-space: nowrap; /* Empêche le retour à la ligne pour le niveau de langue */
     flex: 1; /* Permet au niveau de langue de prendre l'espace restant */
     margin-left: 10px; /* Espacement entre le nom de la langue et le niveau de langue */
+}
+
+/* ====== COLONNE DE DROITE ====== */
+.content section:first-child p{
+    text-align: justify; /* Justifie le texte pour un alignement uniforme */
+    text-indent: 2em; /* Indentation de la première ligne du paragraphe */
+    margin: 0 50px 0px 50px; /* Marge autour du paragraphe */
+    font-size: 0.8rem; /* Taille de police légèrement réduite */
+}
+
+.content section:first-child + section h2 {
+    margin-top: 20px;
+}
+
+.content h3 {
+    font-size: 0.8rem; /* Taille de police légèrement réduite */
+}
+
+.content li {
+    list-style: none; /* Supprime les puces de la liste */
+    margin-left: 10px; /* Décalage à gauche pour les éléments de la liste */
+}
+
+.content section ul p{
+    font-size: 0.6rem; /* Taille de police légèrement réduite */
+    font-style: italic; /* Italique pour le texte des listes */
+}
+
+.content section ul time {
+    font-size: 0.8rem; /* Taille de police légèrement réduite */
+    color: #17abb3; /* Couleur du texte */
+}
+
+.content .item-header {
+    display: flex;
+    justify-content: space-between; /* Espace entre le titre et la date */
+    align-items: center; /* Aligne verticalement le titre et la date */
+    margin: 0 50px; /* Marge inférieure pour espacement */
+}
+
+.content .item-header time {
+    font-size: 0.8rem; /* Taille de police légèrement réduite */
+    color: #17abb3; /* Couleur du texte */
+    white-space: nowrap; /* Empêche le retour à la ligne pour la date */
 }
 
 
