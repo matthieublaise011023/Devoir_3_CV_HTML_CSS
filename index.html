@@ -8,6 +8,10 @@
     <meta name="author" content="Matthieu Blaise">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="./assets/img/favicons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -23,15 +27,15 @@
                         <!-- mail fictif pour l'exercice-->
                     </li>
                     <li>
+                        <img src="./assets/img/icons/accueil.png" alt="">
+                        <a href="https://www.google.com/maps/place/Camp+Nou/@41.3809,2.1202449,17z/data=!4m14!1m7!3m6!1s0x12a498f576297baf:0x44f65330fe1b04b9!2sCamp+Nou!8m2!3d41.380896!4d2.1228198!16zL20vMDFnZ2ps!3m5!1s0x12a498f576297baf:0x44f65330fe1b04b9!8m2!3d41.380896!4d2.1228198!16zL20vMDFnZ2ps?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" rel="noopener noreferrer">Barcelone</a>
+                        <!-- adresse choisie pour faire l'exercice et le lien sur google maps-->
+                    </li>
+                    <li>
                         <img src="./assets/img/icons/telephone.png" alt="">
                         <a href="tel:+33666666666">+33 6 66 66 66 66</a>
                         <!-- numéro fictif pour l'exercice-->
-                    </li>
-                    <li>
-                        <img src="./assets/img/icons/accueil.png" alt="">
-                        <a href="https://www.google.com/maps/place/Camp+Nou/@41.3809,2.1202449,17z/data=!4m14!1m7!3m6!1s0x12a498f576297baf:0x44f65330fe1b04b9!2sCamp+Nou!8m2!3d41.380896!4d2.1228198!16zL20vMDFnZ2ps!3m5!1s0x12a498f576297baf:0x44f65330fe1b04b9!8m2!3d41.380896!4d2.1228198!16zL20vMDFnZ2ps?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank" rel="noopener noreferrer">Les Corts, 08028 Barcelone, Espagne</a>
-                        <!-- adresse choisie pour faire l'exercice et le lien sur google maps-->
                     </li>
                     <li>
                         <img src="./assets/img/icons/voiture.png" alt="">
@@ -89,15 +93,24 @@
                 </section>
                 <section>
                     <h2>Langues</h2>
-                    <ul>
-                        <li>Français : Langue maternelle</li>
-                        <li>Anglais : Notions</li>
-                        <li>Espagnol : Notions</li>
+                    <ul class="languages">
+                        <li>
+                            <span>Français</span>
+                            <span>Langue maternelle</span>
+                        </li>
+                        <li>
+                            <span>Anglais</span>
+                            <span>Notions</span>
+                        </li>
+                        <li>
+                            <span>Espagnol</span>
+                            <span>Notions</span>
+                        </li>
                     </ul>
                 </section>
                 <section>
                     <h2>Qualités</h2>
-                    <ul>
+                    <ul class="list">
                         <li>Esprit d'équipe</li>
                         <li>Communication</li>
                         <li>Organisation</li>
@@ -108,7 +121,7 @@
                 </section>
                 <section>
                     <h2>Centres d'intérêt</h2>
-                    <ul>
+                    <ul class="list">
                         <li>Informatique</li>
                         <li>Jeux vidéo</li>
                         <li>Sport</li>
@@ -250,16 +263,19 @@
         </main>
         <footer>
             <div class="social-links">
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <img src="./assets/img/logos/linkedin_logo.png" alt="LinkedIn"></a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <img src="./assets/img/logos/github_logo.png" alt="GitHub"></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <img src="./assets/img/logos/instagram_logo.png" alt="Instagram"></a>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="./assets/img/logos/linkedin_logo.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="./assets/img/logos/github_logo.png" alt="GitHub"></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="./assets/img/logos/instagram_logo.png" alt="Instagram"></a>
+                </div>
                 <p>
                     Mis à jour le :
-                    <time datetime="03/08/2026">03/08/2026</time>
+                    <time datetime="03-08-2026">03/08/2026</time>
                 </p>
+                
             </div>
         </footer>
     </div>    
