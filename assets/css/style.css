@@ -33,6 +33,7 @@ body {
     padding: 0;
 }
 
+
 /* ========== STYLES GENERAUX ========== */
 
 body {
@@ -57,6 +58,7 @@ footer {
     width: 100%;
 }
 
+
 /* ========== CONTAINER ========== */
 
 .container {
@@ -66,6 +68,7 @@ footer {
     padding: 0 80px;
     background-color: #f5f5f5; /* rgb(245, 245, 245) */
 }
+
 
 /* ========== HEADER ========== */
 
@@ -143,6 +146,129 @@ header a {
     text-decoration: none; /* Supprime le soulignement */
 }
 
+
 /* ========== MAIN ========== */
+
+main {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%; /* Largeur fixe de la colonne de gauche */
+    background-color: #e3e3e3; /* rgb(51, 51, 51) */
+    gap: 20px; /* Espacement entre les éléments de la colonne de gauche */
+}
+
+aside li {
+    font-size: 0.7rem;
+}
+
+main section:first-child h2{
+    margin-top: 35px; /* Marge supérieure pour le premier élément de la colonne de gauche */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 70%; /* Largeur fixe de la colonne de droite */
+    background-color: #ffffff; /* rgb(255, 255, 255) */
+}
+
+main h2 {
+    font-weight: 400; /* Normal */
+    color: #17abb3; /* rgb(23, 171, 179) */
+    font-size: 1.25rem;
+    margin-left: 50px; /* Décalage à gauche */
+    margin-top: 0px; /* Marge supérieure */
+    border-bottom: 1px solid rgba(245, 245, 245, 0.8); /* Ligne en dessous du titre */
+    margin-right: 50px; /* Décalage à droite */
+    padding-bottom: 5px; /* Espacement entre le texte et la ligne */
+}
+
+.skills,
+.languages {
+    list-style: none; /* Supprime les puces de la liste */
+    margin-left: 50px; /* Décalage à gauche pour les éléments de la liste */
+    padding: 0;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espacement entre les éléments de la liste */
+    margin-right: 50px; /* Décalage à droite pour les éléments de la liste */
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre le nom de la compétence et les étoiles */
+}
+
+.skills li span:first-child {
+    font-weight: 700; /* Gras pour le nom de la compétence */
+}
+
+.skills .stars {
+    margin-left: auto; /* Aligne les étoiles à droite */
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Espacement entre les étoiles */
+}
+
+.skills .stars i {
+    display: flex;
+}
+
+.skills .stars img {
+    width: 10px;
+    height: 10px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espacement entre les éléments de la liste */
+}
+
+.list {
+    list-style: none; /* Supprime les puces de la liste */
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px; /* Décalage à gauche pour les éléments de la liste */
+    padding: 0;
+    gap: 3px; /* Espacement entre les éléments de la liste */
+}
+
+.list li:before {
+    content: "■"; /* Utilisation d'un carré comme puce */
+    color:#17abb3; /* Couleur de la puce */
+    margin-right: 8px; /* Espacement entre la puce et le texte */
+}
+
+.languages li {
+    display: flex;
+    flex-wrap: nowrap; /* Empêche le retour à la ligne pour les éléments de la liste */
+}
+
+.languages li span {
+    width: 90px; /* Largeur fixe pour le nom de la langue */
+}
+
+.languages li span:first-child {
+    width: 90px; /* Largeur fixe pour le nom de la langue */
+    flex-shrink: 0; /* Empêche le nom de la langue de rétrécir */
+    font-weight: 700; /* Gras pour le nom de la langue */
+}
+
+.languages li span:last-child {
+    white-space: nowrap; /* Empêche le retour à la ligne pour le niveau de langue */
+    flex: 1; /* Permet au niveau de langue de prendre l'espace restant */
+    margin-left: 10px; /* Espacement entre le nom de la langue et le niveau de langue */
+}
+
+
 /* ========== FOOTER ========== */
 /* ========== SURVOLS ========== */
