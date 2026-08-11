@@ -63,6 +63,8 @@ footer {
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
+    padding: 0 80px;
+    background-color: #f5f5f5; /* rgb(245, 245, 245) */
 }
 
 /* ========== HEADER ========== */
@@ -71,37 +73,50 @@ header {
     display: flex;
     align-items: center;
     background-color: #17abb3; /* rgb(23, 171, 179) */
-    padding: 100px;
+    padding: 30px 80px;
 }
 
-header img {
-    width: 100px;
-    height: 100px;
+header >img {
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     margin-right: 300px;
+    border-radius: 50%;
+    border: 3px solid #ffffff; /* rgb(255, 255, 255) */
 }
 
 .header-content {
     flex: 1;
+    text-align: center;
+    padding-right: 100px;
 }
 
 .header-content ul {
-    list-style: none;
+    list-style: none; /* Supprime les puces de la liste */
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    margin: 20px auto 0;
+    width: 90%;
 }
 
 .header-content li {
     display: flex;
     align-items: center;
     width: 50%;
+    font-size: 0.65rem;
+    padding-left: 30px;
 }
 
 .header-content li img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.header-content li:nth-child(1), /* Premier élément de la liste */
+.header-content li:nth-child(2) {
+    margin-bottom: 10px; /* Ajoute un espacement entre les deux premières lignes */
 }
 
 header h1,
@@ -109,16 +124,23 @@ header h2,
 header a,
 header span {
     color: #ffffff; /* rgb(255, 255, 255) */
+    margin: 0;
 }
 
 header h1 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 700; /* Gras */
+    margin-bottom: 5px; /* Marge inférieure pour espacement */
 }
 
 header h2 {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 400; /* Normal */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+header a {
+    text-decoration: none; /* Supprime le soulignement */
 }
 
 /* ========== MAIN ========== */
