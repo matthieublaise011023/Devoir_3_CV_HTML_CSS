@@ -254,10 +254,6 @@ main h2 {
     flex-wrap: nowrap; /* Empêche le retour à la ligne pour les éléments de la liste */
 }
 
-.languages li span {
-    width: 90px; /* Largeur fixe pour le nom de la langue */
-}
-
 .languages li span:first-child {
     width: 90px; /* Largeur fixe pour le nom de la langue */
     flex-shrink: 0; /* Empêche le nom de la langue de rétrécir */
@@ -282,30 +278,36 @@ main h2 {
     margin-top: 20px;
 }
 
-.content h3 {
+.content section h3 {
     font-size: 0.8rem; /* Taille de police légèrement réduite */
+    margin: 0;
 }
 
-.content li {
+.content section ul li {
     list-style: none; /* Supprime les puces de la liste */
-    margin-left: 10px; /* Décalage à gauche pour les éléments de la liste */
+    margin-bottom: 15px;
+}
+
+.content section ul li:last-child {
+    margin-bottom: 20px;
+}
+
+.content section ul li > p {
+    margin-left: 10px;
 }
 
 .content section ul p{
     font-size: 0.6rem; /* Taille de police légèrement réduite */
     font-style: italic; /* Italique pour le texte des listes */
-}
-
-.content section ul time {
-    font-size: 0.8rem; /* Taille de police légèrement réduite */
-    color: #17abb3; /* Couleur du texte */
+    margin: 0;
 }
 
 .content .item-header {
     display: flex;
     justify-content: space-between; /* Espace entre le titre et la date */
     align-items: center; /* Aligne verticalement le titre et la date */
-    margin: 0 50px; /* Marge inférieure pour espacement */
+    margin-right: 50px; /* Marge inférieure pour espacement */
+    margin-left: 10px;
 }
 
 .content .item-header time {
