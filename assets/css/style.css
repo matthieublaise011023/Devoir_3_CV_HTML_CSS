@@ -79,7 +79,7 @@ header {
     padding: 30px 80px;
 }
 
-header img {
+header > a img {
     width: 130px;
     height: 130px;
     object-fit: cover;
@@ -391,7 +391,11 @@ footer {
     z-index: 1;
 }
 
-/* Indique que la photo peut être agrandie au clic */
-.header img:hover {
+/* Indique que la photo de profil peut être agrandie au clic */
+.header > a img:hover {
     cursor: zoom-in;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
 }
