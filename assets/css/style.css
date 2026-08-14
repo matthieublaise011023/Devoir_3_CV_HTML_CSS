@@ -262,8 +262,9 @@ main h2 {
 
 .languages li span:last-child {
     white-space: nowrap; /* Empêche le retour à la ligne pour le niveau de langue */
-    flex: 1; /* Permet au niveau de langue de prendre l'espace restant */
     margin-left: 10px; /* Espacement entre le nom de la langue et le niveau de langue */
+    text-align: right;
+    width: 100px;
 }
 
 /* ====== COLONNE DE DROITE ====== */
