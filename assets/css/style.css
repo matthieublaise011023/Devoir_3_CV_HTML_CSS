@@ -79,7 +79,7 @@ header {
     padding: 30px 80px;
 }
 
-header >img {
+header > a img {
     width: 130px;
     height: 130px;
     object-fit: cover;
@@ -283,9 +283,11 @@ main h2 {
     margin: 0;
 }
 
+/* Positionnement du li pour pouvoir positionner le pseudo-élément par rapport à celui-ci */
 .content section ul li {
     list-style: none; /* Supprime les puces de la liste */
     margin-bottom: 15px;
+    position: relative;
 }
 
 .content section ul li:last-child {
@@ -349,3 +351,51 @@ footer {
 
 
 /* ========== SURVOLS ========== */
+
+.content section ul li:hover {
+    border-left: none;
+}
+
+/* Décalage du contenu pour reproduire l'effet visuel du modèle au survol */
+.content section ul li:hover .item-header {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+/* Décalage du paragraphe pour conserver son alignement avec le titre */
+.content section ul li:hover > p {
+    margin-left: 20px;
+}
+
+/* Création d'une zone invisible servant de fond et de trait vertical au survol */
+.content section ul li::before {
+    content:"";
+    position: absolute;
+    left: 10px;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border-left: 3px solid transparent
+}
+
+/* Apparition du fond et du trait au survol */
+.content section ul li:hover::before {
+    background-color: #e3e3e3;
+    border-left-color: #17abb3;
+}
+
+/* Place le contenu au-dessus du pseudo-élément afin qu'il reste visible */
+.content section ul li > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Indique que la photo de profil peut être agrandie au clic */
+.header > a img:hover {
+    cursor: zoom-in;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
