@@ -38,7 +38,7 @@ body {
 
 body {
     font-family: "Raleway", sans-serif;
-    color: #333333; /* rgb(23, 171, 179) */
+    color: #333333; /* rgb(51, 51, 51) */
 }
 
 h1,
@@ -117,7 +117,7 @@ header > a img {
     margin-right: 5px;
 }
 
-.header-content li:nth-child(1), /* Premier élément de la liste */
+.header-content li:nth-child(1),
 .header-content li:nth-child(2) {
     margin-bottom: 10px; /* Ajoute un espacement entre les deux premières lignes */
 }
@@ -132,13 +132,13 @@ header span {
 
 header h1 {
     font-size: 2.5rem;
-    font-weight: 700; /* Gras */
+    font-weight: 700;
     margin-bottom: 5px; /* Marge inférieure pour espacement */
 }
 
 header h2 {
     font-size: 1.2rem;
-    font-weight: 400; /* Normal */
+    font-weight: 400; 
     letter-spacing: 1px; /* Espacement entre les lettres */
 }
 
@@ -157,7 +157,7 @@ aside {
     display: flex;
     flex-direction: column;
     flex: 0 0 30%; /* Largeur fixe de la colonne de gauche */
-    background-color: #e3e3e3; /* rgb(51, 51, 51) */
+    background-color: #e3e3e3; /* rgb(227, 227, 227) */
     gap: 20px; /* Espacement entre les éléments de la colonne de gauche */
 }
 
@@ -190,7 +190,7 @@ main h2 {
 /* ====== COLONNE DE GAUCHE ====== */
 .skills,
 .languages {
-    list-style: none; /* Supprime les puces de la liste */
+    list-style: none;
     margin-left: 50px; /* Décalage à gauche pour les éléments de la liste */
     padding: 0;
 }
@@ -235,7 +235,7 @@ main h2 {
 }
 
 .list {
-    list-style: none; /* Supprime les puces de la liste */
+    list-style: none; 
     display: flex;
     flex-direction: column;
     margin-left: 50px; /* Décalage à gauche pour les éléments de la liste */
@@ -271,7 +271,7 @@ main h2 {
     text-align: justify; /* Justifie le texte pour un alignement uniforme */
     text-indent: 2em; /* Indentation de la première ligne du paragraphe */
     margin: 0 50px 0px 50px; /* Marge autour du paragraphe */
-    font-size: 0.8rem; /* Taille de police légèrement réduite */
+    font-size: 0.8rem;
 }
 
 .content section:first-child + section h2 {
@@ -279,15 +279,16 @@ main h2 {
 }
 
 .content section h3 {
-    font-size: 0.8rem; /* Taille de police légèrement réduite */
+    font-size: 0.8rem; 
     margin: 0;
 }
 
 /* Positionnement du li pour pouvoir positionner le pseudo-élément par rapport à celui-ci */
 .content section ul li {
-    list-style: none; /* Supprime les puces de la liste */
+    list-style: none; 
     margin-bottom: 15px;
     position: relative;
+    cursor: default; /* mise en place du curseur par défault pour qu'il reste en mode "souris" même en survolant le texte*/
 }
 
 .content section ul li:last-child {
@@ -299,8 +300,8 @@ main h2 {
 }
 
 .content section ul p{
-    font-size: 0.6rem; /* Taille de police légèrement réduite */
-    font-style: italic; /* Italique pour le texte des listes */
+    font-size: 0.6rem; 
+    font-style: italic; 
     margin: 0;
 }
 
@@ -313,8 +314,8 @@ main h2 {
 }
 
 .content .item-header time {
-    font-size: 0.8rem; /* Taille de police légèrement réduite */
-    color: #17abb3; /* Couleur du texte */
+    font-size: 0.8rem;
+    color: #17abb3; 
     white-space: nowrap; /* Empêche le retour à la ligne pour la date */
 }
 
@@ -392,10 +393,11 @@ footer {
 }
 
 /* Indique que la photo de profil peut être agrandie au clic */
-.header > a img:hover {
+header > a {
     cursor: zoom-in;
 }
 
+/* Place une opacité au survol d'un icone de réseau social*/
 .social-icons img:hover {
     opacity: 0.7;
 }
