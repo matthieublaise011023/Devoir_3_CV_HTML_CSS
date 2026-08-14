@@ -286,6 +286,7 @@ main h2 {
 .content section ul li {
     list-style: none; /* Supprime les puces de la liste */
     margin-bottom: 15px;
+    position: relative;
 }
 
 .content section ul li:last-child {
@@ -349,3 +350,37 @@ footer {
 
 
 /* ========== SURVOLS ========== */
+
+.content section ul li:hover {
+    border-left: none;
+}
+
+.content section ul li:hover .item-header {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.content section ul li:hover > p {
+    margin-left: 20px;
+}
+
+.content section ul li::before {
+    content:"";
+    position: absolute;
+    left: 10px;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border-left: 3px solid transparent
+}
+
+.content section ul li:hover::before {
+    background-color: #e3e3e3;
+    border-left-color: #17abb3;
+}
+
+.content section ul li > * {
+    position: relative;
+    z-index: 1;
+}
