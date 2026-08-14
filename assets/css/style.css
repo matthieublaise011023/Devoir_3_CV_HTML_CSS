@@ -320,13 +320,6 @@ main h2 {
     white-space: nowrap; /* Empêche le retour à la ligne pour la date */
 }
 
-.content .item-header time {
-    font-size: 0.8rem;
-    color: #17abb3; 
-    white-space: nowrap; 
-}
-
-
 /* ========== FOOTER ========== */
 
 footer {
